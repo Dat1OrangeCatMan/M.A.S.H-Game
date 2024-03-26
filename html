@@ -1,6 +1,152 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="uft-8">
-    <title>M.A.S.H</title>
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="title">
+    <h1 id="title"><i>M.A.S.H: A simple, yet fun game to play! (maybe)</i></h1>
+  </div>
+  <p id="dieroll">Your roll was:</p>
+  <div class="game">
+    <table>
+        <thead>
+            <tr>
+                <th class="house" id="house">House</th>
+                <th class="spouse" id="spouse">Spouse</th>
+                <th class="job" id="job">Job</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                <p id="h1"><input class="input" type="text" id="HOption1" placeholder="1"></p>
+                </th>
+
+                <th>
+                <p id="s1"><input class="input" type="text" id="SOption1" placeholder="1"></p>
+                </th>
+
+                <th>
+                <p id="j1"><input class="input" type="text" id="JOption1" placeholder="1"></p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                <p id="h2"><input class="input" type="text" id="HOption2" placeholder="2"></p>
+                </th>
+
+                <th>
+                <p id="s2"><input class="input" type="text" id="SOption2" placeholder="2"></p>
+                </th>
+
+                <th>
+                <p id="j2"><input class="input" type="text" id="JOption2" placeholder="2"></p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                <p id="h3"><input class="input" type="text" id="HOption3" placeholder="3"></p>
+                </th>
+
+                <th>
+                <p id="s3"><input class="input" type="text" id="SOption3" placeholder="3"></p>
+                </th>
+
+                <th>
+                <p id="j3"><input class="input" type="text" id="JOption3" placeholder="3"></p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                <p id="h4"><input class="input" type="text" id="HOption4" placeholder="4"></p>
+                </th>
+
+                <th>
+                <p id="s4"><input class="input" type="text" id="SOption4" placeholder="4"></p>
+                </th>
+
+                <th>
+                <p id="j4"><input class="input" type="text" id="JOption4" placeholder="4"></p>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th class="kids" id="kids"># of Kids</th>
+                <th class="vroom" id="car">Car</th>
+                <th class="lacasita" id="reside">Place of Residence</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+                <th>
+                <p id="k1"><input class="input" type="text" id="KOption1" placeholder="1"></p>
+                </th>
+
+                <th>
+                <p id="c1"><input class="input" type="text" id="COption1" placeholder="1"></p>
+                </th>
+
+                <th>
+                <p id="r1"><input class="input" type="text" id="ROption1" placeholder="1"></p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                <p id="k2"><input class="input" type="text" id="KOption2" placeholder="2"></p>
+                </th>
+
+                <th>
+                <p id="c2"><input class="input" type="text" id="COption2" placeholder="2"></p>
+                </th>
+
+                <th>
+                <p id="r2"><input class="input" type="text" id="ROption2" placeholder="2"></p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                <p id="k3"><input class="input" type="text" id="KOption3" placeholder="3"></p>
+                </th>
+
+                <th>
+                <p id="c3"><input class="input" type="text" id="COption3" placeholder="3"></p>
+                </th>
+
+                <th>
+                <p id="r3"><input class="input" type="text" id="ROption3" placeholder="3"></p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                <p id="k4"><input class="input" type="text" id="KOption4" placeholder="4"></p>
+                </th>
+
+                <th>
+                <p id="c4"><input class="input" type="text" id="COption4" placeholder="4"></p>
+                </th>
+
+                <th>
+                <p id="r4"><input class="input" type="text" id="ROption4" placeholder="4"></p>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+  <button id="ready" type="button" class="ready" onclick="ready(this)"><strong><i>READY (click) </i></strong></button>
+
+  <button id="roll" type="button" class="roll" disabled="true" onclick="roll()">Roll</button>
+  <br><br>
+  <p id="results">You are going to live in a(n), marry, work as a(n), have kids, drive around in a(n), and live in.</p>
+  <script src="script.js"></script>
+</body>
+
 </html>
