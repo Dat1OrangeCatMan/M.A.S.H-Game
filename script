@@ -1,1 +1,240 @@
+var house = ['#HOption1', '#HOption2', '#HOption3', '#HOption4'];
+var spouse = ['#SOption1', '#SOption2', '#SOption3', '#SOption4'];
+var job = ['#JOption1', '#JOption2', '#JOption3', '#JOption4'];
+var kids = ['#KOption1', '#KOption2', '#KOption3', '#KOption4'];
+var car = ['#COption1', '#COption2', '#COption3', '#COption4'];
+var reside = ['#ROption1', '#ROption2', '#ROption3', '#ROption4'];
+var mashGame = [house, spouse, job, kids, car, reside];
+var col = -1;
+var onCol;
+function disableTable(){
+document.querySelector(house[0]).disabled=true;
+document.querySelector(house[1]).disabled=true;
+document.querySelector(house[2]).disabled=true;
+document.querySelector(house[3]).disabled=true;
 
+document.querySelector(spouse[0]).disabled=true;
+document.querySelector(spouse[1]).disabled=true;
+document.querySelector(spouse[2]).disabled=true;
+document.querySelector(spouse[3]).disabled=true;
+
+document.querySelector(job[0]).disabled=true;
+document.querySelector(job[1]).disabled=true;
+document.querySelector(job[2]).disabled=true;
+document.querySelector(job[3]).disabled=true;
+
+document.querySelector(kids[0]).disabled=true;
+document.querySelector(kids[1]).disabled=true;
+document.querySelector(kids[2]).disabled=true;
+document.querySelector(kids[3]).disabled=true;
+
+document.querySelector(car[0]).disabled=true;
+document.querySelector(car[1]).disabled=true;
+document.querySelector(car[2]).disabled=true;
+document.querySelector(car[3]).disabled=true;
+
+document.querySelector(reside[0]).disabled=true;
+document.querySelector(reside[1]).disabled=true;
+document.querySelector(reside[2]).disabled=true;
+document.querySelector(reside[3]).disabled=true;
+}
+function ready(element) {
+element.style.color = 'rgb(255,255,255,0.2)';
+element.style.background = 'rgb(255,0,0,0.2)';
+element.disabled = true;
+document.querySelector('#roll').disabled = false;
+document.querySelector('#roll').style.cursor = "pointer";
+disableTable();
+};
+
+var hWinner;
+var sWinner;
+var jWinner;
+var kWinner;
+var cWinner;
+var rWinner;
+
+function handleSelections(colLetter, rollNum){
+var rows = ["#" + colLetter + "1", "#" + colLetter + "2", "#" + colLetter + "3", "#" + colLetter + "4", ];
+if (rollNum == 1){
+    document.querySelector(rows[0]).style.backgroundColor = "lightgreen";
+    document.querySelector(rows[1]).style.backgroundColor = "red";
+    document.querySelector(rows[2]).style.backgroundColor = "red";
+    document.querySelector(rows[3]).style.backgroundColor = "red";
+    if (colLetter == "h"){
+        hWinner = document.querySelector("#HOption1").value;
+    }
+    if (colLetter == "s"){
+        sWinner = document.querySelector("#SOption1").value;
+    }
+    if (colLetter == "j"){
+        jWinner = document.querySelector("#JOption1").value;
+    }
+    if (colLetter == "k"){
+        kWinner = document.querySelector("#KOption1").value;
+    }
+    if (colLetter == "c"){
+        cWinner = document.querySelector("#COption1").value;
+    }
+    if (colLetter == "r"){
+        rWinner = document.querySelector("#ROption1").value;
+    }
+}
+if (rollNum == 2){
+    document.querySelector(rows[0]).style.backgroundColor = "red";
+    document.querySelector(rows[1]).style.backgroundColor = "lightgreen";
+    document.querySelector(rows[2]).style.backgroundColor = "red";
+    document.querySelector(rows[3]).style.backgroundColor = "red";
+    if (colLetter == "h"){
+        hWinner = document.querySelector("#HOption2").value;
+    }
+    if (colLetter == "s"){
+        sWinner = document.querySelector("#SOption2").value;
+    }
+    if (colLetter == "j"){
+        jWinner = document.querySelector("#JOption2").value;
+    }
+    if (colLetter == "k"){
+        kWinner = document.querySelector("#KOption2").value;
+    }
+    if (colLetter == "c"){
+        cWinner = document.querySelector("#COption2").value;
+    }
+    if (colLetter == "r"){
+        rWinner = document.querySelector("#ROption2").value;
+    }
+}
+if (rollNum == 3){
+    document.querySelector(rows[0]).style.backgroundColor = "red";
+    document.querySelector(rows[1]).style.backgroundColor = "lightgreen";
+    document.querySelector(rows[2]).style.backgroundColor = "red";
+    document.querySelector(rows[3]).style.backgroundColor = "red";
+    if (colLetter == "h"){
+        hWinner = document.querySelector("#HOption2").value;
+    }
+    if (colLetter == "s"){
+        sWinner = document.querySelector("#SOption2").value;
+    }
+    if (colLetter == "j"){
+        jWinner = document.querySelector("#JOption2").value;
+    }
+    if (colLetter == "k"){
+        kWinner = document.querySelector("#KOption2").value;
+    }
+    if (colLetter == "c"){
+        cWinner = document.querySelector("#COption2").value;
+    }
+    if (colLetter == "r"){
+        rWinner = document.querySelector("#ROption2").value;
+    }
+}
+if (rollNum == 4){
+    document.querySelector(rows[0]).style.backgroundColor = "red";
+    document.querySelector(rows[1]).style.backgroundColor = "red";
+    document.querySelector(rows[2]).style.backgroundColor = "red";
+    document.querySelector(rows[3]).style.backgroundColor = "lightgreen";
+    if (colLetter == "h"){
+        hWinner = document.querySelector("#HOption4").value;
+    }
+    if (colLetter == "s"){
+        sWinner = document.querySelector("#SOption4").value;
+    }
+    if (colLetter == "j"){
+        jWinner = document.querySelector("#JOption4").value;
+    }
+    if (colLetter == "k"){
+        kWinner = document.querySelector("#KOption4").value;
+    }
+    if (colLetter == "c"){
+        cWinner = document.querySelector("#COption4").value;
+    }
+    if (colLetter == "r"){
+        rWinner = document.querySelector("#ROption4").value;
+    }
+}
+if (rollNum == 5){
+    document.querySelector(rows[0]).style.backgroundColor = "lightgreen";
+    document.querySelector(rows[1]).style.backgroundColor = "red";
+    document.querySelector(rows[2]).style.backgroundColor = "red";
+    document.querySelector(rows[3]).style.backgroundColor = "red";
+    if (colLetter == "h"){
+        hWinner = document.querySelector("#HOption1").value;
+    }
+    if (colLetter == "s"){
+        sWinner = document.querySelector("#SOption1").value;
+    }
+    if (colLetter == "j"){
+        jWinner = document.querySelector("#JOption1").value;
+    }
+    if (colLetter == "k"){
+        kWinner = document.querySelector("#KOption1").value;
+    }
+    if (colLetter == "c"){
+        cWinner = document.querySelector("#COption1").value;
+    }
+    if (colLetter == "r"){
+        rWinner = document.querySelector("#ROption1").value;
+    }
+}
+if (rollNum == 6){
+    document.querySelector(rows[0]).style.backgroundColor = "red";
+    document.querySelector(rows[1]).style.backgroundColor = "red";
+    document.querySelector(rows[2]).style.backgroundColor = "red";
+    document.querySelector(rows[3]).style.backgroundColor = "lightgreen"; 
+    if (colLetter == "h"){
+        hWinner = document.querySelector("#HOption4").value;
+    }
+    if (colLetter == "s"){
+        sWinner = document.querySelector("#SOption4").value;
+    }
+    if (colLetter == "j"){
+        jWinner = document.querySelector("#JOption4").value;
+    }
+    if (colLetter == "k"){
+        kWinner = document.querySelector("#KOption4").value;
+    }
+    if (colLetter == "c"){
+        cWinner = document.querySelector("#COption4").value;
+    }
+    if (colLetter == "r"){
+        rWinner = document.querySelector("#ROption4").value;
+    }
+}
+
+document.querySelector("#results").innerText = "You are going to live in a(n) " + hWinner + ", marry " + sWinner + ", work as a(n) " + jWinner + ", have " + kWinner+ " kids, drive around in a(n) " + cWinner + ", and live in " + rWinner +".";
+};
+var colLetter;
+function roll() {
+var onCol = mashGame;
+const rollNum = Math.floor(Math.random() * 6) + 1;
+document.querySelector('#dieroll').style.color = 'black';     col += 1;
+if (col == 5){
+    document.querySelector('#roll').disabled = true;    
+}
+if (col == -1){
+    col += 1;
+} else{
+    col = col;
+}
+if (col == 0){
+    colLetter = "h";
+}
+if (col == 1){
+    colLetter = "s";
+}
+if (col == 2){
+    colLetter = "j";
+}
+if (col == 3){
+    colLetter = "k";
+}
+if (col == 4){
+    colLetter = "c";
+}
+if (col == 5){
+    colLetter = "r";
+}    
+document.querySelector('#dieroll').innerText = "Your roll was: " + rollNum;
+handleSelections(colLetter, rollNum);
+
+};
