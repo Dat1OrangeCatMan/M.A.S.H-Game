@@ -1,1 +1,75 @@
+body{
+    background:#ffe599;
+    user-select: none;
+}
+table{
+  align-content: center;
+}
+.title{
+font-family:monospace;
+text-align:center;
+background:rgb(255,242,204);
+}
+h1{
+    background:#99ddffff;
 
+}
+.roll{
+    background: rgb(0, 0, 255, 0.1);
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:4px;
+    cursor: mouse;
+}
+.house{
+    background: lightgreen;
+    font-family: 'Comic Sans MS';
+}
+.spouse{
+    background: yellow;
+    font-family: 'Comic Sans MS';
+}
+.job{
+    background: blue;
+    color:white;
+    font-family: 'Comic Sans MS';
+}
+.kids{
+    background: orange;
+    font-family: 'Comic Sans MS';
+}
+.vroom{
+    background:skyblue;
+    font-family: 'Comic Sans MS';
+}
+.lacasita{
+    background: violet;
+    font-family: 'Comic Sans MS';
+}
+.ready{
+    background: red;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius:4px;
+}
+input{
+    width: 185px;
+    background: rgb(255, 255, 255,0.5);
+    color: black;
+}
+p{
+    color:#ffe599ff;
+    color: black;
+    margin: 0px 0px;
+
+}
